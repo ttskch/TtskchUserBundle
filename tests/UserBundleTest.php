@@ -13,12 +13,12 @@ class UserBundleTest extends TestCase
      */
     protected $userBundle;
 
-    protected function setUp() : void
+    protected function setUp(): void
     {
-        $this->userBundle = new UserBundle;
+        $this->userBundle = new UserBundle();
     }
 
-    public function testIsInstanceOfUserBundle() : void
+    public function testIsInstanceOfUserBundle(): void
     {
         $actual = $this->userBundle;
         $this->assertInstanceOf(UserBundle::class, $actual);
