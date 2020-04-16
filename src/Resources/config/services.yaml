@@ -1,0 +1,6 @@
+services:
+  ttskch_user.some_service:
+    public: true
+    class: Ttskch\UserBundle\SomeClass
+    arguments:
+      - ~
