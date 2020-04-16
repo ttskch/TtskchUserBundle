@@ -1,7 +1,8 @@
 <?php
 $finder = PhpCsFixer\Finder::create()
     ->exclude(['tests/Fake'])
-    ->in([__DIR__.'/src', __DIR__.'/tests']);
+    ->in([__DIR__.'/src', __DIR__.'/tests'])
+;
 
 return \PhpCsFixer\Config::create()
     ->setRules([
@@ -14,4 +15,5 @@ return \PhpCsFixer\Config::create()
         'semicolon_after_instruction' => false,
     ])
     ->setRiskyAllowed(true)
-    ->setFinder($finder);
+    ->setFinder($finder)
+;
