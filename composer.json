@@ -1,6 +1,8 @@
 {
     "name": "ttskch/user-bundle",
     "description": "",
+    "keywords": ["symfony", "user"],
+    "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
@@ -33,11 +35,6 @@
         }
     },
     "scripts": {
-        "post-install-cmd": [
-            "Koriym\\PhpSkeleton\\Installer::postInstall",
-            "composer update",
-            "./vendor/bin/psalm --init"
-        ],
         "test": [
             "vendor/bin/phpunit"
         ],
