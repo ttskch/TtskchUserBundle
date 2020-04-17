@@ -1,2 +1,14 @@
 ttskch_user_security:
   resource: '@TtskchUserBundle/Resources/config/routing/security.yaml'
+
+ttskch_user_registration:
+  resource: '@TtskchUserBundle/Resources/config/routing/registration.yaml'
+
+ttskch_user_resetting:
+  resource: '@TtskchUserBundle/Resources/config/routing/resetting.yaml'
+
+ttskch_user_profile:
+  resource: '@TtskchUserBundle/Resources/config/routing/profile.yaml'
+
+ttskch_user_change_password:
+  resource: '@TtskchUserBundle/Resources/config/routing/change_password.yaml'

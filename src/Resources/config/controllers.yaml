@@ -12,3 +12,16 @@ services:
   ttskch_user.security.controller.logout:
     class: Ttskch\UserBundle\Controller\Security\LogoutController
     public: true
+
+  ttskch_user.registarion.controller.register:
+    class: Ttskch\UserBundle\Controller\Registration\RegisterController
+    arguments:
+      - '@doctrine.orm.entity_manager.abstract'
+      - '@event_dispatcher'
+      - Ttskch\UserBundle\Entity\User
+      - Ttskch\UserBundle\Form\Type\UserType
+    public: true
+
+  ttskch_user.registarion.controller.check_email:
+    class: Ttskch\UserBundle\Controller\Registration\CheckEmailController
+    public: true

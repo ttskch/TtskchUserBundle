@@ -1,0 +1,19 @@
+ttskch_user_registration_register:
+  path: /register
+  methods: [GET, POST]
+  controller: ttskch_user.registration.controller.register
+
+ttskch_user_registration_check_email:
+  path: /check-email
+  methods: [GET]
+  controller: ttskch_user.registration.controller.check_email
+
+#ttskch_user_registration_confirm:
+#  path: /confirm/{token}
+#  methods: [GET]
+#  controller: ttskch_user.registration.controller.confirm
+#
+#ttskch_user_registration_confirmed:
+#  path: /confirmed
+#  methods: [GET]
+#  controller: ttskch_user.registration.controller.confirmed
