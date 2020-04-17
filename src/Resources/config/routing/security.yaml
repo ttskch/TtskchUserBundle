@@ -1,0 +1,14 @@
+ttskch_user_security_login:
+  path: /login
+  methods: [GET, POST]
+  controller: ttskch_user.security.controller.login
+
+ttskch_user_security_check:
+  path: /login_check
+  methods: [POST]
+  controller: ttskch_user.security.controller.check
+
+ttskch_user_security_logout:
+  path: /logout
+  methods: [GET, POST]
+  controller: ttskch_user.security.controller.logout

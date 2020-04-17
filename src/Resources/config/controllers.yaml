@@ -1,0 +1,14 @@
+services:
+  ttskch_user.security.controller.login:
+    class: Ttskch\UserBundle\Controller\Security\LoginController
+    arguments:
+      - '@security.csrf.token_manager'
+    public: true
+
+  ttskch_user.security.controller.check:
+    class: Ttskch\UserBundle\Controller\Security\CheckController
+    public: true
+
+  ttskch_user.security.controller.logout:
+    class: Ttskch\UserBundle\Controller\Security\LogoutController
+    public: true

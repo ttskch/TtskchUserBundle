@@ -1,0 +1,2 @@
+ttskch_user_security:
+  resource: '@TtskchUserBundle/Resources/config/routing/security.yaml'
